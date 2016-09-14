@@ -29,12 +29,5 @@ public class MarshmallowMonster
 		this.armCount = armCount;
 		this.noseCount = noseCount;
 	}
-	/* 
-	 * name = Hairy Jerry III
-	 * antennaCount = 2
-	 * eyeCount = 3
-	 * hasBellyButton = false
-	 * armCount = 6
-	 * noseCount = 1
-	 */
+	
 }
