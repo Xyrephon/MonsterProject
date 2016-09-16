@@ -48,12 +48,31 @@ public class MonsterController
 			System.out.println("How many antenna would you like me to have?");
 			double newAntenna = keyboardInput.nextDouble();
 			firstMonster.setAntennaCount(newAntenna);
+			keyboardInput.nextLine();
+			// clears the scanner
 		}
 		else
 		{
 			System.out.println("Okay, the amount of antenna will remain the same!");
 		}
 		System.out.println("The amount of antenna is: " + firstMonster.getAntennaCount());
+		
+		System.out.println("Would you like to change the amount of eyes?");
+		String eyeAnswer = keyboardInput.nextLine();
+		
+		if (eyeAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("What would you like the new amount of eyes to be?");
+			int newEye = keyboardInput.nextInt();
+			firstMonster.setEyeCount(newEye);
+			keyboardInput.nextLine();
+			// clears the scanner
+		}
+		else
+		{
+			System.out.println("The amount of eyes will be the same!");
+		}
+		System.out.println("Your monster has " + firstMonster.getEyeCount() + "eyes!");
 		
 	}
 }
