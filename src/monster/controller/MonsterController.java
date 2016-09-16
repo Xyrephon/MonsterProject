@@ -20,6 +20,5 @@ public class MonsterController
 		{
 			System.out.println("That's a lot of eyes!");
 		}
-		System.out.println(firstMonster.toString());
 	}
 }
