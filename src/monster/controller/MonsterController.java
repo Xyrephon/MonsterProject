@@ -95,5 +95,22 @@ public class MonsterController
 			System.out.println("Your monster's belly button status will remain the same!");
 		}
 		System.out.println("Your monsters belly button status: " + firstMonster.getHasBellyButton());
+		
+		System.out.println("Do you want to change how many arms your monster has?");
+		String armAnswer = keyboardInput.nextLine();
+	
+		if (armAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many arms do you want your monster to have?");
+			int armCount = keyboardInput.nextInt();
+			firstMonster.setArmCount(armCount);
+			keyboardInput.nextLine();
+			// clears the scanner
+		}
+		else
+		{
+			System.out.println("Your monster will have the same amount of arms!");
+		}
+		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
 	}
 }
