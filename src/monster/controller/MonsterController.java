@@ -72,7 +72,28 @@ public class MonsterController
 		{
 			System.out.println("The amount of eyes will be the same!");
 		}
-		System.out.println("Your monster has " + firstMonster.getEyeCount() + "eyes!");
+		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eyes!");
 		
+		System.out.println("Do you want to whether or not your monster has a belly button?");
+		String bellyButtonAnswer = keyboardInput.nextLine();
+		
+		if (bellyButtonAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("Do you want your monster to have a belly button?");
+			String trueFalse = keyboardInput.nextLine();
+			if (trueFalse.equalsIgnoreCase("yes"))
+			{
+				firstMonster.setHasBellyButton(true);
+			}
+			else 
+			{
+				firstMonster.setHasBellyButton(false);
+			}
+		}
+		else
+		{
+			System.out.println("Your monster's belly button status will remain the same!");
+		}
+		System.out.println("Your monsters belly button status: " + firstMonster.getHasBellyButton());
 	}
 }
