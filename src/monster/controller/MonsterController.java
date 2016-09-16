@@ -1,14 +1,17 @@
 package monster.controller;
 
 import monster.model.MarshmallowMonster;
+import java.util.Scanner;
 
 public class MonsterController
 {
 	private MarshmallowMonster firstMonster;
+	private Scanner keyboardInput;
 	
 	public MonsterController()
 	{
 		firstMonster = new MarshmallowMonster("Hairy Jerry III", 2.0, 3, false, 6, 1);
+		keyboardInput = new Scanner(System.in);
 	}
 	
 	
@@ -16,9 +19,41 @@ public class MonsterController
 	{
 		System.out.println("Here is my monster: " + firstMonster);
 		System.out.println("my monster has this many eyes: " + firstMonster.getEyeCount());
-		if(firstMonster.getEyeCount() > 3)
+
+//		if (firstMonster.getEyeCount() > 3)
+//		{
+//			System.out.println("That's a lot of eyes!");
+//		}
+		
+		System.out.println("Do you want my name to change?");
+		String answer = keyboardInput.nextLine();
+		
+		if (answer.equalsIgnoreCase("yes"))
 		{
-			System.out.println("That's a lot of eyes!");
+			System.out.println("What do you want my name to be?");
+			String newName = keyboardInput.nextLine();
+			firstMonster.setName(newName);
 		}
+		else
+		{
+			System.out.println("Fine, don't change my name!");
+		}
+		System.out.println(firstMonster);
+		
+		System.out.println("Do you want to change the amount of antenna?");
+		String antennaAnswer = keyboardInput.nextLine();
+		
+		if (antennaAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many antenna would you like me to have?");
+			double newAntenna = keyboardInput.nextDouble();
+			firstMonster.setAntennaCount(newAntenna);
+		}
+		else
+		{
+			System.out.println("Okay, the amount of antenna will remain the same!");
+		}
+		System.out.println("The amount of antenna is: " + firstMonster.getAntennaCount());
+		
 	}
 }
