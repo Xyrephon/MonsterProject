@@ -139,5 +139,8 @@ public class MonsterController
 		System.out.println("Your monster's belly button status is: " + firstMonster.getHasBellyButton());
 		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
 		System.out.println("Your monster has " + firstMonster.getNoseCount() + " noses!");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("Thank you for playing!");
 	}
 }
