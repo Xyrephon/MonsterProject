@@ -130,10 +130,12 @@ public class MonsterController
 		}
 		System.out.println("Your monster now has " + firstMonster.getNoseCount() + " noses");
 		
+		System.out.println(" ");
+		System.out.println(" ");
 		System.out.println("Your new monster looks like this:");
 		System.out.println("Your monster's name is: " + firstMonster.getName());
-		System.out.println("Your monster has " + firstMonster.getAntennaCount() + " antenna.");
-		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eyes");
+		System.out.println("Your monster has " + firstMonster.getAntennaCount() + " antenna!");
+		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eyes!");
 		System.out.println("Your monster's belly button status is: " + firstMonster.getHasBellyButton());
 		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
 		System.out.println("Your monster has " + firstMonster.getNoseCount() + " noses!");
