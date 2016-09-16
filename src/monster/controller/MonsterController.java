@@ -112,5 +112,30 @@ public class MonsterController
 			System.out.println("Your monster will have the same amount of arms!");
 		}
 		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
+		
+		System.out.println("Do you want to change the number of noses your monster has?");
+		String noseAnswer = keyboardInput.nextLine();
+		
+		if (noseAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many noses would you like your monster to have?");
+			int noseCount = keyboardInput.nextInt();
+			firstMonster.setNoseCount(noseCount);
+			keyboardInput.nextLine();
+			// clears the scanner
+		}
+		else
+		{
+			System.out.println("Your nose count will stay the same!");
+		}
+		System.out.println("Your monster now has " + firstMonster.getNoseCount() + " noses");
+		
+		System.out.println("Your new monster looks like this:");
+		System.out.println("Your monster's name is: " + firstMonster.getName());
+		System.out.println("Your monster has " + firstMonster.getAntennaCount() + " antenna.");
+		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eyes");
+		System.out.println("Your monster's belly button status is: " + firstMonster.getHasBellyButton());
+		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
+		System.out.println("Your monster has " + firstMonster.getNoseCount() + " noses!");
 	}
 }
