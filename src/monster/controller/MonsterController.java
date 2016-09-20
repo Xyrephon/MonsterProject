@@ -25,13 +25,36 @@ public class MonsterController
 		System.out.println("My monster has " + firstMonster.getEyeCount() + " eyes!");
 		System.out.println("My monster's belly button status is: " + firstMonster.getHasBellyButton());
 		System.out.println("My monster has " + firstMonster.getArmCount() + " arms!");
-		System.out.println("My monster has " + firstMonster.getNoseCount() + " noses!");
+		System.out.println("My monster has " + firstMonster.getNoseCount() + " nose!");
 
 //		if (firstMonster.getEyeCount() > 3)
 //		{
 //			System.out.println("That's a lot of eyes!");
 //		}
+		monsterDecisions();
 		
+		
+		System.out.println("Your monster now has " + firstMonster.getNoseCount() + " noses");
+		
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("Your new monster looks like this:");
+		System.out.println("Your monster's name is: " + firstMonster.getName());
+		System.out.println("Your monster has " + firstMonster.getAntennaCount() + " antenna!");
+		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eye(s)!");
+		System.out.println("Your monster's belly button status is: " + firstMonster.getHasBellyButton());
+		System.out.println("Your monster has " + firstMonster.getArmCount() + " arm(s)!");
+		System.out.println("Your monster has " + firstMonster.getNoseCount() + " nose(s)!");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("Thank you for playing!");
+		System.out.println("You will find this monster in your closet tomorrow morning, Good luck!");
+		
+		loopMonster();
+	}
+	
+	private void monsterDecisions()
+	{
 		System.out.println("Do you want my name to change?");
 		String answer = keyboardInput.nextLine();
 		
@@ -134,20 +157,20 @@ public class MonsterController
 		else
 		{
 			System.out.println("Your nose count will stay the same!");
-		}
-		System.out.println("Your monster now has " + firstMonster.getNoseCount() + " noses");
-		
-		System.out.println(" ");
-		System.out.println(" ");
-		System.out.println("Your new monster looks like this:");
-		System.out.println("Your monster's name is: " + firstMonster.getName());
-		System.out.println("Your monster has " + firstMonster.getAntennaCount() + " antenna!");
-		System.out.println("Your monster has " + firstMonster.getEyeCount() + " eyes!");
-		System.out.println("Your monster's belly button status is: " + firstMonster.getHasBellyButton());
-		System.out.println("Your monster has " + firstMonster.getArmCount() + " arms!");
-		System.out.println("Your monster has " + firstMonster.getNoseCount() + " noses!");
-		System.out.println(" ");
-		System.out.println(" ");
-		System.out.println("Thank you for playing!");
+		}	
 	}
+	private void loopMonster()
+	{
+		//define a variable for condition/test
+		int numberOfTimes = 0;
+		while(numberOfTimes < 1000)
+		{
+			//Code to do
+			System.out.print("First monster words "+ firstMonster);
+			
+			//Code to change variable for condition
+			numberOfTimes++;
+		}
+	}
+	
 }
