@@ -23,4 +23,9 @@ public class MonsterView
 		return userInput;
 	}
 	
+	public void displayText(String displayText)
+	{
+		JOptionPane.showMessageDialog(null,  displayText, windowMessage, JOptionPane.PLAIN_MESSAGE, monsterIcon);
+	}
+	
 }
